@@ -1,3 +1,4 @@
 # M4-Assignment-Deep-Learning
-This is the first assignment for the Deep Learning, this project is submitted by Yasmine Sarraj, Nils Bayer.
-We will build a deep learning model based on the classification of the penguin dataset
+This is the portfolio of assignments for the Deep Learning module, this portfolio is submitted by Yasmine Sarraj, Nils Bayer.
+In the first assignment we buit a deep learning model based on the classification of the penguin dataset. 
+In the second assignement we built and evaluate 2 special types of networks neural network with Pytorch. (CNN & RNN)
