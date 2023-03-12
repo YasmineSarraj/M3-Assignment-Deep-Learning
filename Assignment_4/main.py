@@ -32,7 +32,7 @@ def create_tags(payload):
     return response.json()
 
 def summarize_text(payload):
-    API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
+    API_URL = "https://api-inference.huggingface.co/models/yasminesarraj/flan-t5-small-samsum"
     response = requests.post(API_URL, headers=headers, json=payload)
     return response.json()
 
