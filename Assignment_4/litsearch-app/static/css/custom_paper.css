@@ -1,0 +1,41 @@
+h1 {
+    margin-bottom: 1rem;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+h3 {
+    margin: 1rem 0;
+}
+
+.big-margin {
+    margin: 3rem 0 1rem 0;
+}
+
+.tag {
+    padding: .5rem;
+    color: #3D6C8D;
+    background-color: #F3F3F3;
+    line-height: 3rem;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: all .1s;
+}
+
+.tag:hover {
+    background-color: #3D6C8D;
+    color: white;
+    cursor: pointer;
+}
+
+#subject-result {
+    margin-top: 2rem;
+}
+
+#loading-div {
+    display: none;
+}

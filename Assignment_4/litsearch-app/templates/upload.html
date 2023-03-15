@@ -1,0 +1,21 @@
+{% extends "model.html" %}
+
+{% block extended_head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+    <script src="{{ url_for('static', filename='js/loading.js') }}" defer></script>    
+{% endblock extended_head %}
+
+{% block dynamic_content %}
+    <h1>Uplaod your paper here</h1>
+    <form id="upload-form" action="" method="POST" enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        <label>
+            <span></span>
+            {{ form.files }}
+        </label>
+        {{ form.submit }}
+        {% for error in form.files.errors %}
+            <div>{{ error }}}</div>
+        {% endfor %}
+    </form>
+{% endblock dynamic_content %}

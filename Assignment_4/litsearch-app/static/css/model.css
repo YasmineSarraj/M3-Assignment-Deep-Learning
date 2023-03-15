@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --height-top: 20vh;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    padding-bottom: 6rem;
+}
+
+.dyn {
+    padding: .5rem 4rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    position: relative;
+    height: var(--height-top);
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    margin-left: 4rem;
+} 
+
+.top-right-svg {
+    height: var(--height-top);
+    width: 136;
+    position: absolute;
+    right: 0;
+}
+
+#circle-upload-btn {
+    fill: #3D6C8D;
+    transition: fill .1s linear;
+}
+
+#plus-sign:hover #circle-upload-btn {
+    fill: #4b80a6;
+}
+
+.results {
+    position: absolute;
+    margin-left: 4rem;
+    margin-top: calc(var(--height-top) * -0.3);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+    width: 40vw;
+}
+
+.result a {
+    display:flex;
+    padding: .5rem 1rem;
+    gap:1rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+.result a:hover {
+    background-color: #F3F3F3;
+}
+
+.loading-circle {
+    --accent-color: #60aafa;
+    margin-left: 40%;
+    margin-top: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border-top: 10px solid var(--accent-color);
+    border-bottom: 10px solid white;
+    border-right: 10px solid var(--accent-color);
+    border-left: 10px solid white;
+    animation: turn 2s linear infinite;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+        border-left: 10px solid white;
+        border-bottom: 10px solid white;
+        border-right: 10px solid var(--accent-color);
+        border-top: 10px solid var(--accent-color);
+    }
+    50% {
+        transform: rotate(180deg);
+        border-left: 10px solid var(--accent-color);
+        border-bottom: 10px solid var(--accent-color);
+        border-right: 10px solid white;
+        border-top: 10px solid white;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-left: 10px solid white;
+        border-bottom: 10px solid white;
+        border-right: 10px solid var(--accent-color);
+        border-top: 10px solid var(--accent-color);
+    }
+}

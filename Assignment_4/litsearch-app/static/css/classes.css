@@ -1,0 +1,10 @@
+input[type="text"] {
+    padding: .5rem 1rem;
+    width: 30vw;
+    outline: none;
+    border: none;
+    background-color: rgba(224, 224, 224, 0.38);
+    border-radius: 5px;
+    color: #6D6D6D;
+    height: 2rem;
+}
